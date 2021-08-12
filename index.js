@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 var bodyParser = require('body-parser');    
 var urlencodedParser = bodyParser.urlencoded({ extended: false }) ;
-const User = require("./models/User");
+const User = require("./User");
 mongoose.connect("mongodb://localhost:27017/freelance", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
